@@ -278,10 +278,10 @@ export default function Todo() {
     // Edit state
     const [editTitle, setEditTitle] = useState("");
     const [editDescription, setEditDescription] = useState(""); // Fixed typo here
-
     const apiUrl = process.env.NODE_ENV === 'production' 
         ? 'https://todolist-k2az.onrender.com' 
         : 'http://localhost:8000';
+
 
     // Function to fetch items
     const getItems = () => {
